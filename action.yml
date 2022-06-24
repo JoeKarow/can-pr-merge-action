@@ -1,0 +1,12 @@
+name: "Is this PR ready to merge?"
+description: "Checks if PR is ready to be merged."
+inputs:
+  pr:
+    description: "PR Number"
+    required: true
+outputs:
+  ok_to_merge: # id of output
+    description: "boolean"
+runs:
+  using: "node16"
+  main: "index.js"
